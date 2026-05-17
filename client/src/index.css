@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply min-h-screen bg-slate-950 text-slate-100 antialiased;
+}
+
+::selection {
+  @apply bg-brand-500 text-white;
+}
+
+button,
+input,
+textarea,
+select {
+  @apply outline-none;
+}
+
+.bg-app-gradient {
+  background: radial-gradient(circle at top, rgba(99, 102, 241, 0.18), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.15), transparent 20%),
+    #020617;
+}
